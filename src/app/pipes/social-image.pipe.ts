@@ -4,8 +4,8 @@ import {Pipe, PipeTransform} from '@angular/core';
   name: 'socialImage'
 })
 export class SocialImagePipe implements PipeTransform {
-  private _image_path = '/assets/socials/';
-  private _default_image = '/assets/unknown.jpg';
+  private _image_path = 'assets/socials/';
+  private _default_image = 'assets/unknown.jpg';
 
   public transform(image: string, args?: any): string {
     if (!image) {

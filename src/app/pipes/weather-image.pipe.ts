@@ -5,7 +5,7 @@ import {WeatherTypes} from '../api';
   name: 'weatherImage'
 })
 export class WeatherImagePipe implements PipeTransform {
-  private _image_path = '/assets/weather/';
+  private _image_path = 'assets/weather/';
   private _type_cast: Map<number, string>;
 
   constructor() {
