@@ -1,0 +1,19 @@
+.layout {
+  width: 330px;
+  height: 310px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: #edccc7;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  margin-top: 0;
+}
+
+.image {
+  vertical-align: middle;
+  width: 300px;
+  height: 250px;
+}

@@ -1,0 +1,9 @@
+<div class="layout">
+  <h2 class="header">{{social_info.username}}</h2>
+  <img [src]="social_info.image | socialImage" class="image">
+  <div class="footer">
+    <div class="likes"><p>Likes</p>
+      <p>{{social_info.likes}}</p></div><div class="followers"><p>Followers</p>
+      <p>{{social_info.followers}}</p></div>
+  </div>
+</div>

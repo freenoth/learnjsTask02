@@ -1,0 +1,33 @@
+.layout {
+  width: 550px;
+  height: 100%;
+}
+
+.white_layout {
+  background-color: white;
+}
+
+md-list {
+  height: 300px;
+  width: 100%;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.buttons_layout {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.active_button {
+  background-color: lightgray;
+}
+
+.head-image {
+  width: 550px;
+  height: 350px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: cadetblue;
+}

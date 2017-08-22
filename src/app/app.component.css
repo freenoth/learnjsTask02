@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+}
+
+.layout {
+  width: 100%;
+  text-align: center;
+}
+
+.layout div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.panel-divider {
+  width: 10px;
+  height: 100%;
+}

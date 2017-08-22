@@ -1,0 +1,20 @@
+<div class="layout">
+  <img [src]="current_airport.getImage() | airportImage" class="head-image">
+  <div class="white_layout">
+    <div class="buttons_layout">
+      <button md-button *ngFor="let continent of continents;"
+              [ngClass]="{active_button:_filter===continent}"
+              (click)="filter(continent)">
+        {{continent}}
+      </button>
+    </div>
+    <md-divider></md-divider>
+    <md-list>
+      <app-airport *ngFor="let item of airports | airportFilter:_filter; let is_odd = odd;"
+                   [airport_data]="item"
+                   [is_colored]="is_odd"
+                   (is_clicked)="itemChoosed($event)"
+      ></app-airport>
+    </md-list>
+  </div>
+</div>

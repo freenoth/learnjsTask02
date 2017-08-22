@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  public title = '2nd homework for learning JavaScript';
+
+  public current_airport: IAirportData;
+
+  constructor() {
+  }
+
+  public change_current(data: IAirportData) {
+    this.current_airport = data;
+  }
+
 }

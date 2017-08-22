@@ -1,0 +1,9 @@
+<md-list-item (click)="itemClicked()" [ngClass]="{coloredItem:is_colored}">
+  <p md-line><b>{{airport.name}}</b></p>
+  <p md-line>
+    <span>{{airport.city}}, {{airport.country}}:</span>
+    <span>{{airport.phone}}</span>
+  </p>
+  <img [src]="airport.getImage() | airportImage" class="itemImage">
+  <img [src]="getSocialImage() | socialImage" class="itemImage">
+</md-list-item>
